@@ -1,24 +1,58 @@
 # INST126_Final-Project_Bamba_Sarah
 # Tuple Out Dice Game
 
-This is a Python version of "Tuple Out" dice game.
+Tuple Out Dice Game with Data Analysis
 
-## How to Play
+This is a Python implementation of the "Tuple Out" Dice Game, a simple dice game where players take turns rolling three dice. The objective is to score points by rolling different combinations of dice values, with the goal of being the first player to reach a target score.
 
-1. Run the script and enter the number of players when prompted.
-2. Each player takes a turn rolling three dice.
-   - If all three dice show the same value (a tuple), the player scores 0 for that turn.
-   - If two dice show the same value (doubles), those two dice are "fixed," and the player re-rolls the remaining die. The final score is the sum of the fixed dice and the last roll.
-   - If no doubles or tuples, the score for the turn is the sum of all three dice.
-3. Play continues until one player reaches the target score of 50 or the maximum number of turns (5) is reached.
-4. The player with the highest score at the end wins.
+Game Rules
 
-## Credits
+1. Each player rolls three dice on their turn.
+2. If all three dice show the same value (a tuple), the player's turn ends with a score of 0.
+3. If two dice show the same value (fixed dice), those dice are set aside, and the player re-rolls the remaining dice until they have no more unfixed dice.
+4. If all dice show different values, the player's turn score is the sum of the dice values.
+5. Players continue taking turns until one player reaches or exceeds the target score (default is 50 points).
+6. If the maximum number of turns is reached (default is 5 turns) and no player has reached the target score, the game ends in a draw.
 
-This program was developed as a project for the Fundamentals of Programming course at the University of Maryland.
+Data Analysis
 
-Code contributions and assistance were provided by Elaina Magnum.
+This implementation includes data analysis features to track and analyze game and player statistics. The following statistics are collected:
 
+Game Statistics
+
+- Total number of turns
+- Number of tuples rolled
+- Number of fixed dice rolled
+- Highest score achieved by any player
+- Lowest score achieved by any player
+
+Player Statistics
+
+- Number of wins
+- Average score per game
+- Highest score achieved
+- Number of tuples rolled
+- Number of fixed dice rolled
+
+These statistics are printed at the end of each game, allowing you to analyze the performance of individual players and the overall game dynamics.
+
+Usage
+ Run the script:
+
+python dice_game.py
+
+4. Enter the number of players when prompted.
+5. The game will start, and players will take turns rolling the dice.
+6. After the game ends, the game statistics and player statistics will be printed.
+
+
+License
+
+This project is licensed under the MIT License. See the LICENSE.txt file for details.
+
+Contributions
+
+This project was developed by Sarah Bamba with help from Elaina Magnum.
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE.txt](LICENSE.txt) file for details.
